@@ -58,11 +58,11 @@ kramdown:
 
 
 
-# Disqus settings
-disqus_username: hux
+# # Disqus settings
+# disqus_username: hux
 
-# Netease settings
-netease_comment: false
+# # Netease settings
+# netease_comment: false
 
 
 
@@ -106,20 +106,20 @@ friends: [
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
-        title: "乱序",
+        title: "version1.0",
         href: "https://tcloser.github.io/Xu.github.io/"
     },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
-    },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
+        title: "WSY",
+        href: "https://mesywang.github.io/"
+    # },{
+    #     title: "天镶的博客",
+    #     href: "http://lingyu.wang/"
+    # },{
+    #     title: "Luke 的自留地",
+    #     href: "http://hmqk1995.github.io"
+    # },{
+    #     title: "Ebn's Blog",
+    #     href: "http://ebnbin.com/"
     }
     # },{
     #     title: "SmdCn's Blog",
