@@ -1,4 +1,4 @@
-# Hux blog 模板
+<!-- # Hux blog 模板
 
 ### [我的博客在这里 &rarr;](http://huxpro.github.io)
 
@@ -255,4 +255,4 @@ JavaScript 的压缩混淆、Less 的编译、Apache 2.0 许可通告的添加�
 3. 感谢 Jekyll、Github Pages 和 Bootstrap!
 
 
-
+ -->
