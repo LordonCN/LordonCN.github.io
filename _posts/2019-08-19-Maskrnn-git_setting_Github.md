@@ -3,7 +3,8 @@ layout: post
 title: "FB-Maskrnn_demo测试+加快Github网页访问速度"
 subtitle: '脸书物体检测源码'
 author: "xudongdong"
-header-style: text
+header-img: img/home-bg-art.jpg
+catalog: true
 tags:
   - Maskrnn
   - Deep learning

@@ -3,7 +3,8 @@ layout: post
 title: "深度学习中数据集启发+Jekyll环境配置+Hexo配置"
 subtitle: 'How to enrich datasets'
 author: "xudongdong"
-header-style: text
+header-img: img/home-bg-art.jpg
+catalog: true
 tags:
   - Datasets
   - Deep learning
