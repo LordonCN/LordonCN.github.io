@@ -1,10 +1,10 @@
 # Site settings
-title: Hello Tenno
-SEOTitle: 徐洛冬的博客 | XuD Blog
+title: Hello World
+SEOTitle: 徐洛冬的博客 | XuD's Blog
 header-img: img/home-bg.jpg
 email: xunjtech@gmail.com
-description: "关于程序与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
+description: "Dongdong 一个热爱生活而又不服输的Tenno,渴望拥有自己的中继站:)"
+keyword: "Deep learning,AI"
 url: "https://tcloser.github.io/Xu.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -18,7 +18,7 @@ zhihu_username:     dong-dong-mo-mo/activities
 github_username:    Tcloser
 # twitter_username:   huxpro
 #facebook_username:  huxpro
-#linkedin_username:  firstname-lastname-idxxxx
+linkedin_username:  洛冬-徐-395653190
 
 
 
@@ -106,10 +106,10 @@ friends: [
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
-        title: "version1.0",
+        title: "Version1.0",
         href: "https://tcloser.github.io/Xu.github.io/"
     },{
-        title: "WSY",
+        title: "WSY_A robot developer",
         href: "https://mesywang.github.io/"
     # },{
     #     title: "天镶的博客",
