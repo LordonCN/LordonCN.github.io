@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "深度学习中数据集启发+Jekyll环境配置+Hexo配置"
-subtitle: 'Using Vim with non-english input method'
+subtitle: 'How to enrich datasets'
 author: "xudongdong"
 header-style: text
 tags:
