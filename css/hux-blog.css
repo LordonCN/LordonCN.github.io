@@ -257,13 +257,13 @@ button.paper-button {
   /*font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;*/
   font-size: 1em;
   line-height: 25px;
-  background-color: #ffffff;
+  background-color: #790909;
 }
 .paper-button input[type="submit"] {
   outline-color: #cccccc;
 }
 .paper-button.colored.raised-button input[type="submit"] {
-  color: #ffffff;
+  color: #790909;
 }
 /** Shadows **/
 .paper-shadow-animated.paper-shadow {
@@ -1356,17 +1356,17 @@ form .row:first-child .floating-label-form-group {
   cursor: not-allowed;
 }
 ::-moz-selection {
-  color: white;
+  color: rgb(14, 6, 6);
   text-shadow: none;
   background: #0085a1;
 }
 ::selection {
-  color: white;
+  color: rgb(12, 7, 7);
   text-shadow: none;
   background: #0085a1;
 }
 img::selection {
-  color: white;
+  color: rgb(17, 8, 8);
   background: transparent;
 }
 img::-moz-selection {
@@ -1390,7 +1390,7 @@ img::-moz-selection {
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 999em;
   padding: 0 10px 0 10px;
-  color: #ffffff;
+  color: #110707;
   line-height: 24px;
   font-size: 12px;
   text-decoration: none;
