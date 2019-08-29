@@ -65,11 +65,11 @@ vim .gitconfig
 
 - 现在做的项目是教室内表情识别(左边从上往下第三个框框)
 
-<img src="/img/190816post/liuchengtu.jpg" width="0" height="0" />
+<img src="/img/190816post/liuchengtu.jpg">
 
 - 所以想要先把脸切出来肯定需要定位图片中的所有小朋友是吧，效果怎么样！
 
-<img src="/img/190819post/stu.jpg" width="0" height="0" />
+<img src="/img/190819post/stu.jpg" >
 
 #### 8.19 22:35 溜了溜了..明天看看怎么切
 <br>
