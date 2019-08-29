@@ -3,12 +3,13 @@ layout: post
 title: "深度学习中数据集启发+Jekyll环境配置+Hexo配置"
 subtitle: 'How to enrich datasets'
 author: "xudongdong"
-header-img: img/home-bg-art.jpg
+header-img: img/post-sample-image.jpg
 catalog: true
 tags:
   - Datasets
   - Deep learning
   - Jekyll
+  - Object detection
 ---
 
 # 0、前言
