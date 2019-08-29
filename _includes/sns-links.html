@@ -7,7 +7,7 @@
 {% else %}
 <ul class="list-inline">
 {% endif %}
-
+<!-- 制作小图标 -->
   {% if site.RSS %}
   <li>
     <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
@@ -37,6 +37,7 @@
       </span>
     </a>
   </li>
+
   {% endif %}
   {% if site.weibo_username %}
   <li>
@@ -78,4 +79,21 @@
     </a>
   </li>
   {% endif %}
+  <li>
+    <a target="_blank" href="mailto:xunjtech@gmail.com ">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  <li>
+    <a target="_blank" href="https://tcloser.github.io/">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-refresh fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  <!-- 添加qq和微信 -->
 </ul>
