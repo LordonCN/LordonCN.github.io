@@ -3,7 +3,7 @@ layout: post
 title: "The tutorial of system installation Win10 and Ubuntu18.04"
 subtitle: 'There r so many errors while I following the way to install the Ubuntu on CSDN,and it made me so sad.So I decide to write something for others~'
 author: "xudongdong"
-header-img: img/jassica/xixi2.jpg
+header-img: img/jassica/jessica-jung-celebrity.jpg
 catalog: true
 tags:
   - windows

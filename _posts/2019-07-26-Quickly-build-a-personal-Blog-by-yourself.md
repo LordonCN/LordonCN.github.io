@@ -3,7 +3,7 @@ layout: post
 title: "Quickly build a personal Blog by yourself"
 subtitle: 'Dont u want to have a try ? Come on !'
 author: "xudongdong"
-header-img: img/jassica/xixi2.jpg
+header-img: img/wallpapers/wall-e-and-eve.jpg
 catalog: true
 tags:
   - Atom

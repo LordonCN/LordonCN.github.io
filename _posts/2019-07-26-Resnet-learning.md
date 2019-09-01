@@ -3,7 +3,7 @@ layout: post
 title: "Its ResNet interesting ?"
 subtitle: 'Yes！'
 author: "xudongdong"
-header-img: img/jassica/xixi2.jpg
+header-img: img/jassica/jessica-jung.jpg
 catalog: true
 tags:
   - CS
