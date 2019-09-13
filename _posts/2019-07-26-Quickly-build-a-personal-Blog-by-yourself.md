@@ -109,9 +109,17 @@ ubuntu在日常工作中逐渐占据了大量的时间,windows上面的应用虽
 - 压缩A.txt：  	tar -cvf  A.gz   A.txt
 - 解压缩： 	tar -xvf B.gz
 - [ssh]远程控制：|1、ifconfig	|2、ssh dooncloud@192.168.130.37 输入帐号密码即可连接|
+- [ln]：		快捷方式(符号链接) ln -s Cpp-learning/ Cpp_practice 为文件夹设置快捷方式  
 - [tmux]：		tmux attach (远程连接可直接关闭对话框，attach后恢复原对话)
 - [scp]拿文件：	scp -r dooncloud@192.168.130.37:/home/dooncloud/桌面/practice/xuluodong/    (本地存放位置--->) /home/dong/remote_get_ssh/
 - 文件夹重命名：	mv a/ b/   (同文件夹下的改名)
 - 文件夹移动：	mv (当前文件夹下的徐洛冬文件夹)xuluodong/  /home/dong/remote_get_ssh(移动到remote_get_ssh文件夹下)
 - [at]定时指令:	at -f practice.sh now+1 minutes
 - utorrent启动指令：|1、$utserver -settingspath /opt/utorrent-server-alpha-v3_3/|2、浏览器访问http://your-ip-:8080/gui   (ip=ifconfig查看)|3、用户名admin，密码为空：
+- cat\less ：	都是阅读内容  管道用法  " ls -a /use/bin | less "
+- [less]：		|按"q"退出浏览模式 |G翻到最后|g翻到开头
+- [history]:	查看之前使用过的指令
+- [ctrl+r]:		查找相似指令 能够快速补全长指令
+- /usr/share/dict/words:  匹配单词 grep -i '^..j.r$' /usr/share/dict/words   grep -i '^predic*$' /usr/share/dict/words
+- 创建.txt文本：	|重定向方法 $ > hello.txt       | ls -a /uer/bin > /home/dong/Desktop/hello.txt|或者vim text.txt|
+使用>>：	|重定向输出内容 可以用来查看程序运行情况 相当于log.txt |ls -a /uer/bin > /home/dong/Desktop/hello.txt 2>&1 |如果发生错误 输出错误信息|
