@@ -132,4 +132,32 @@ OUTPUT:
 
 
 
+# 注意点：
+
+### 初始化部分：
+若有这么一个数组：
+```
+int var[3] = {10, 100, 200}; 
+```
+初始化指针：
+```
+// 一维
+int *p = var;       //int *ptr_1 = &var; int *ptr_1 = &var[0];
+
+int *p_1;
+p_1 = &var;         //p_1 = &var[0];
+
+// 二维
+int *pr=&nums[0][0];
+```
+显示地址：
+```
+cout << p << p+1 <<endl;  //0x7fffffffde00 0x7fffffffde04
+```
+显示数值：
+```
+cout << *p << p[1] <<endl; //10  100
+```
+
+
 
