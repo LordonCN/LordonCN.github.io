@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "cpp-array-of-pointers"
-subtitle: '最近预习C++ 看到指针这里总结的挺棒 分享一波'
+title: "CPP-array-and-pointers"
+subtitle: 'C++ 指着部分总结'
 author: "xudongdong"
-header-img: img/jassica/jasscia2.gif
+header-img: img/jassica/jessica-jung.jpg
 catalog: true
 tags:
   - C++
@@ -150,14 +150,47 @@ p_1 = &var;         //p_1 = &var[0];
 // 二维
 int *pr=&nums[0][0];
 ```
-显示地址：
+### 显示地址：
 ```
 cout << p << p+1 <<endl;  //0x7fffffffde00 0x7fffffffde04
 ```
-显示数值：
+### 显示数值：
 ```
 cout << *p << p[1] <<endl; //10  100
 ```
 
+### 传递指针给函数
+```coq
+double sum_to_average(int *ptr,int size);
+int main()
+{
+    int var[3]={1,5,34};double result =0;
 
+    result =sum_to_average(var,3);
+    cout<<result<<endl;
+}
 
+double sum_to_average(int *ptr,int size)
+{
+    int i,sum=0;double result;
+    for(i=0;i<size;i++)                 //中间用分号
+    {sum += ptr[i];}
+    result = double(sum)/size;
+    return result;                      //返回值类型与函数类型相匹配
+}
+```
+### 函数数组返回指针
+```coq
+int * getRandom( );
+int main ()
+{
+   int *p;
+   p = getRandom();         //赋值外部函数生成的数组地址
+   return 0;
+}
+int * getRandom( )          // 要生成和返回随机数的函数
+{
+  static int  r[10]={1,2,3,4,5,6,7,8,9,10};
+  return r;                 //返回数组的首地址
+}
+```
