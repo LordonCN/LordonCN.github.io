@@ -211,3 +211,8 @@ int * getRandom( )          // 要生成和返回随机数的函数
   return array;                 //返回数组的首地址
 }
 ```
+
+# 参考文档
+
+- [方便回看](https://www.runoob.com/cplusplus/cpp-pointers.html)
+
