@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CPP-array-and-pointers"
-subtitle: 'C++ 指着部分总结'
+subtitle: 'C++ 指针部分总结'
 author: "xudongdong"
 header-img: img/jassica/jessica-jung.jpg
 catalog: true
@@ -132,23 +132,41 @@ OUTPUT:
 
 
 
-# 注意点：
+# 3、注意点：
 
 ### 初始化部分：
-若有这么一个数组：
+##### (1)
+若有这么一个数组var：
 ```
 int var[3] = {10, 100, 200}; 
 ```
 初始化指针：
 ```
-// 一维
+/*一维*/ 
 int *p = var;       //int *ptr_1 = &var; int *ptr_1 = &var[0];
 
 int *p_1;
 p_1 = &var;         //p_1 = &var[0];
 
-// 二维
+/*二维*/ 
 int *pr=&nums[0][0];
+```
+##### (2)
+对于单个数值来说
+```
+int num = 110;
+int *p = &num;
+```
+##### 通用方式-好记：
+```
+/*数组*/
+int *ptr = &var[0];
+int *ptr = &nums[0][0];
+//或者
+int *ptr;
+ptr = &var;
+/*数*/
+int *ptr = &num;
 ```
 ### 显示地址：
 ```
@@ -158,7 +176,6 @@ cout << p << p+1 <<endl;  //0x7fffffffde00 0x7fffffffde04
 ```
 cout << *p << p[1] <<endl; //10  100
 ```
-
 ### 传递指针给函数
 ```coq
 double sum_to_average(int *ptr,int size);
@@ -173,7 +190,7 @@ int main()
 double sum_to_average(int *ptr,int size)
 {
     int i,sum=0;double result;
-    for(i=0;i<size;i++)                 //中间用分号
+    for(i=0;i<size;i++)                 
     {sum += ptr[i];}
     result = double(sum)/size;
     return result;                      //返回值类型与函数类型相匹配
@@ -190,7 +207,7 @@ int main ()
 }
 int * getRandom( )          // 要生成和返回随机数的函数
 {
-  static int  r[10]={1,2,3,4,5,6,7,8,9,10};
-  return r;                 //返回数组的首地址
+  static int  array[10]={1,2,3,4,5,6,7,8,9,10};
+  return array;                 //返回数组的首地址
 }
 ```
