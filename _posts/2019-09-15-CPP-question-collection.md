@@ -58,4 +58,39 @@ cout<<num<<endl;
 ```coq
 getline(cin,password);  //`非阻塞`输入字符串  
 ```
+具体如下：
+```coq
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+bool IsPasswordRightorNot()
+{
+   string password;
+   int num_now=3;
+   while(num_now--)                          //有限次机会   3次
+   {
+      cout<<"Pls input password"<<endl;
+      getline(cin,password);                 //非阻塞输入字符串  
+      if(password=="password_is_me")
+      {
+         cout<<"welcome"<<endl; 
+         return true;
+      }
+      else cout<<"Pls try again,only"<<num_now<<"times left"<<endl;
+   }
+   return false;
+}
+
+int main()
+{
+   bool PassOrNot=false;
+
+   PassOrNot=IsPasswordRightorNot();
+   //if pass then next step
+   cout<<"print right_wrong:"<<PassOrNot<<endl;
+   return 0;
+}
+```
 # loading...
