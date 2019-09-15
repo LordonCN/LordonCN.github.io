@@ -57,7 +57,7 @@ cout<<num<<endl;
 getline(cin,password);  //`非阻塞`输入字符串  
 ```
 
-so,show me your code?<br>
+Code?<br>
 ```coq
 #include <iostream>
 #include <string>
