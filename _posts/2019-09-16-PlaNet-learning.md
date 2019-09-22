@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "菜鸟入门 先提前接触一下"
+title: "google开源的深度规划网络，仅从图像输入中学习世界模型，并成功利用它进行规划。"
 subtitle: 'planet相关'
 author: "xudongdong"
 header-img: img/jassica/jessica-jung-celebrity.jpg
 catalog: true
 tags:
-  - Ubuntu
+  - PlaNet
 ---
 
 # 0、前言
@@ -31,3 +31,16 @@ jiafan@TJDL4:~/uct$ python3.7                                        Python 3.7.
 >>> import pygame                                                    pygame 1.9.6 Hello from the pygame community. https://www.pygame.org/>>>                  
 ```
 所以突发奇想直接指定python版本即可...  
+
+# 2、初探流程
+忙完手头的活补充了基本知识之后开始尝试大致了解代码。
+> 大致流程如下所示
+```
+1、train_episode和test_episode目录先各收集到５个episode， /planet/control/random_episodes.py def random_episodes() |初始化def _initial_collection() | /planet/training/utility.py  def collect_initial_episodes()中调用
+2、然后开始５万步，每一步从train_episode取数据，      	 /planet/scripts/configs.py ----> def _training_schedule(config, params):
+3、计算loss。						 /planet/training/define_model.py ---->   train_loss = tf.cond()
+4、去求gradient，再planning出一个episode。
+5、5万步后是100步的test phase，会从test_episode得数据 	/planet/scripts/configs.py ----> def _training_schedule(config, params):
+6、不求loss 不求gradient，                           	/planet/training/define_model.py ---->   train_loss = tf.cond()
+7、之后planning出一个episode.	/planet/training/test_running.py   --->   with tf.variable_scope('simulation')
+```
