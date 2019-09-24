@@ -44,3 +44,27 @@ jiafan@TJDL4:~/uct$ python3.7                                        Python 3.7.
 6、不求loss 不求gradient，                           	/planet/training/define_model.py ---->   train_loss = tf.cond()
 7、之后planning出一个episode.	/planet/training/test_running.py   --->   with tf.variable_scope('simulation')
 ```
+
+>为了学习准确的潜在动力学模型，google团队引入了：
+
+`循环状态空间模型`：具有确定性和随机性成分的潜在动力学模型，允许根据稳健的计划预测各种可能的未来，同时记住多个时间步骤的信息。实验表明，这两个组件对于高规划性能至关重要。<br>
+`潜在的超调目标`：将潜动力模型的标准训练目标推广到训练多步预测，通过在潜空间中加强一步预测和多步预测的一致性。这产生了一个快速和有效的目标，提高了长期预测，并与任何潜在序列模型兼容。
+总结：
+虽然预测未来图像允许教授模型，但`编码和解码`图像（上图中的梯形）需要大量计算，这会减慢计划。然而，在紧凑的潜在状态空间中的规划是快速的，因为我们仅需要预测未来的奖励而不是图像来评估动作序列。
+
+
+例如:智能体可以想象球的位置及其与目标的距离将如何针对某些动作而改变，而不必使场景可视化。
+这允许在智能体每次选择动作时能够比较1万个想象的`动作序列`(之后的好多步动作，这里是12步)和并对回报大小进行计算，最后执行找到的`最佳序列`的`第一个`动作，执行结束后并对之后的动作`重新进行计划`。
+
+# 3、解决ubuntu运行不友好的问题
+实验室的师兄们使用`Mobaxterm`远程连接服务器之后文件移动以及pycharm调试特别方便，那么ubuntu是不是就特别不方便了？问题不大。<br>
+期初因为命令行run报错太多，pygame运行缺少video报错的问题，就把问题归咎于命令行的问题...于是搞了个软件来模拟win链接服务器，恩，是这个[`Asbru`](https://www.asbru-cm.net/)，  相对不太友好的是文件的传输还是需要`scp`指令，效果见下图：<br>
+<img src="/img/190819post (copy)/asbru.png" >
+
+不过问题还好是解决了，命令行报video的错，asbru报audio的错[stackoverflow解决办法 添加pygame的初始化](https://stackoverflow.com/questions/15933493/pygame-error-no-available-video-device/53623914)。
+asbru客户端下问题确实解决了，出于好奇便想彻底解决命令行下运行报错的问题，嘿嘿，试了试把文件里面不调用音频，不过只有同时打开asbru的情况下才能正常运行...下面这个图看起来还是可以的吧。
+<img src="/img/190819post (copy)/success.png" >
+
+### 4、代码中关于使用GPU的 RuntimeError: to is not supported on TracedModules
+问题很简单 就小小贴一下
+[pytorch报错 使用不当报错 不知道源代码怎么错误写成了net.to(device=args.device)](https://discuss.pytorch.org/t/cannot-move-scriptmodule-to-gpu-with-to/35939)
