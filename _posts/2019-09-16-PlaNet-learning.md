@@ -59,11 +59,11 @@ jiafan@TJDL4:~/uct$ python3.7                                        Python 3.7.
 # 3、解决ubuntu运行不友好的问题
 实验室的师兄们使用`Mobaxterm`远程连接服务器之后文件移动以及pycharm调试特别方便，那么ubuntu是不是就特别不方便了？问题不大。<br>
 期初因为命令行run报错太多，pygame运行缺少video报错的问题，就把问题归咎于命令行的问题...于是搞了个软件来模拟win链接服务器，恩，是这个[`Asbru`](https://www.asbru-cm.net/)，  相对不太友好的是文件的传输还是需要`scp`指令，效果见下图：<br>
-<img src="/img/190819post (copy)/asbru.png" >
+<img src="/img/190916post/asbru.png" >
 
 不过问题还好是解决了，命令行报video的错，asbru报audio的错[stackoverflow解决办法 添加pygame的初始化](https://stackoverflow.com/questions/15933493/pygame-error-no-available-video-device/53623914)。
 asbru客户端下问题确实解决了，出于好奇便想彻底解决命令行下运行报错的问题，嘿嘿，试了试把文件里面不调用音频，不过只有同时打开asbru的情况下才能正常运行...下面这个图看起来还是可以的吧。
-<img src="/img/190819post (copy)/success.png" >
+<img src="/img/190916post/success.png" >
 
 ### 4、代码中关于使用GPU的 RuntimeError: to is not supported on TracedModules
 问题很简单 就小小贴一下
