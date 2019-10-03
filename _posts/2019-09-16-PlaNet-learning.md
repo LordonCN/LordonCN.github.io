@@ -68,3 +68,10 @@ asbru客户端下问题确实解决了，出于好奇便想彻底解决命令行
 ### 4、代码中关于使用GPU的 RuntimeError: to is not supported on TracedModules
 问题很简单 就小小贴一下
 [pytorch报错 使用不当报错 不知道源代码怎么错误写成了net.to(device=args.device)](https://discuss.pytorch.org/t/cannot-move-scriptmodule-to-gpu-with-to/35939)
+
+# 5、系统地学习Tensorflow
+在开始学习之前，最好对机器学习有一个大致的了解。相比于市面上的很多书籍，吴恩达的网课应该是最好不过的了，特别是CNN网络的讲解非常透彻，当初看了那么多博客回过头来看他的[Slides](https://docs.google.com/presentation/d/15E7NlyMkG8dAMa70i2OluprBDoz3UPyAk5ZpOiCkEqw/edit)才发现好多坑都填平了。
+>[吴恩达机器学习](http://cs231n.github.io/)
+
+斯坦福大学推出的CS20对于我个人来说是非常合适的，首先从基本的Tensorflow语句用法入手，大致对“图”有了解，进而讲解了CNN、GANS([这里推荐B站7月在线的网课](https://www.bilibili.com/video/av38768354/?spm_id_from=333.788.videocard.13))、VAE(变分自编码器)、RNN，课后作业是填空类型实操。
+>[Stanford-Tensorflow教程与实现](http://web.stanford.edu/class/cs20si/syllabus.html)
