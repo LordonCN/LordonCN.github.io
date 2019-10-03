@@ -22,6 +22,8 @@ tags:
 
 # 卷积
 
+>19.10.3更新，吴恩达的cs231还是建议系统学一下，如果时间真的没有那么充足，可以参考他们整理过的doc[cs20-class6](http://cs231n.github.io/convolutional-networks/)
+
 - 卷积是第一个需要重点了解的概念，VGG、ResNet以及以后会学习到的不少网络都属于CNN网络。有网友提供的关于计算卷积操作下输入与输出图像大小变化的公式不一定适合所有的情况，所以说在定制相关网络的时候还是最好手动计算一下,这样在自行设计网络的时候修改卷`kernal_size`、`stride`和`padding`的时候更加得心应手。注意：画图的时候 `使用stride参数来画图！** **使用stride参数来画图！** **使用stride参数来画图！`
 
   <img src="/img/190728image/convjisuan.jpg">
