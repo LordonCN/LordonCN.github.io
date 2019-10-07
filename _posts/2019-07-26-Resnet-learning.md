@@ -92,6 +92,7 @@ class Bottleneck(nn.Module):
     def __init__(self, in_planes, planes, stride=1):
         super(Bottleneck, self).__init__()
         self.conv1 = nn.Conv2d(in_planes, planes, kernel_size=1, bias=False)
+        '''norm 参考AlexNet 归一化处理'''
         self.bn1 = nn.BatchNorm2d(planes)
         self.conv2 = nn.Conv2d(planes, planes, kernel_size=3, stride=stride, padding=1, bias=False)
         self.bn2 = nn.BatchNorm2d(planes)
@@ -150,7 +151,7 @@ def _make_layer(self, block, planes, num_blocks, stride):
 
 ```
 
-反观原论文，欠采样部分还是有必要分析一下的，参考
+反观原论文，downsample 还是有必要分析一下的，参考
 - [Basicblock和bottleneck的区别](https://www.cnblogs.com/wzyuan/p/9880342.html)
 
 ```coq
@@ -191,10 +192,10 @@ def forward(self, x):#x是输入的图片数据 数据集改变的是x
         #out = F.avg_pool2d(out, 4)# size-4)/6+1
         # size-6+1     跟卷积运算图像变化算法相同
         out = self.avgpool(out)           #'''torch.Size([90, 512, 1, 1])'''
-        out = out.view(out.size(0), -1)#'''torch.Size([90, 512])'''
-        out = F.dropout(out, p=0.5, training=self.training)#类似relu激活函数
+        out = out.view(out.size(0), -1)   #'''torch.Size([90, 512])'''
+        out = F.dropout(out, p=0.5, training=self.training)  #重新随机删除一些神经元 防止过拟合
         out = self.fc(out)                #basic block中是1*1*512--->1*1*7 || bottle中是 1*1*512*expansion-->1*1*7
-        return out                        #7种表情
+        return out                        #7种表情相似度的一维数据  [0.2,0.4,0.2,0.6...]
 
 ```
 ### 传入每层数量
