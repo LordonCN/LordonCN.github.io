@@ -7,6 +7,9 @@ header-img: img/jassica/jessica-jung-celebrity.jpg
 catalog: true
 tags:
   - PlaNet
+  - RNN LSTM GRU
+  - Tensorflow
+  - Cross Entropy Error Func
 ---
 
 # 0、前言
@@ -73,5 +76,32 @@ asbru客户端下问题确实解决了，出于好奇便想彻底解决命令行
 在开始学习之前，最好对机器学习有一个大致的了解。相比于市面上的很多书籍，吴恩达的网课应该是最好不过的了，特别是CNN网络的讲解非常透彻，当初看了那么多博客回过头来看他的[Slides](https://docs.google.com/presentation/d/15E7NlyMkG8dAMa70i2OluprBDoz3UPyAk5ZpOiCkEqw/edit)才发现好多坑都填平了。
 >[吴恩达机器学习](http://cs231n.github.io/)
 
-斯坦福大学推出的CS20对于我个人来说是非常合适的，首先从基本的Tensorflow语句用法入手，大致对“图”有了解，进而讲解了CNN、GANS([这里推荐B站7月在线的网课](https://www.bilibili.com/video/av38768354/?spm_id_from=333.788.videocard.13))、VAE([自动化所黄怀波](https://www.bilibili.com/video/av37380954?from=search&seid=11989753959255513148))、RNN，课后作业是填空类型实操。
+斯坦福大学推出的CS20对于我个人来说是非常合适的，首先从基本的Tensorflow语句用法入手，大致对“图”有了解，进而讲解了`CNN`、`GANS`([这里推荐B站7月在线的网课](https://www.bilibili.com/video/av38768354/?spm_id_from=333.788.videocard.13))、`VAE`([自动化所黄怀波](https://www.bilibili.com/video/av37380954?from=search&seid=11989753959255513148))、`RNN`，课后作业是填空类型实操。
 >[Stanford-Tensorflow教程与实现](http://web.stanford.edu/class/cs20si/syllabus.html)
+
+# 6、十一结束 RNN深入学习
+十一的前四天过得很充实，看了两天网课跟pdf仔细打了下基础知识，临开学前刷知乎发现了[`YJango`](https://www.zhihu.com/people/YJango/activities)大佬之前发过的RNN、LSTM详解，抓紧[码住](https://zhuanlan.zhihu.com/p/25518711)！
+
+> RNN与LSTM关系:
+
+如果把`RNN`比作是手机屏幕，而`LSTM-RNN`与`GRU`则可以说是手机膜。<br>
+在多次迭代过程中，大量非线性累积历史信息会造成梯度消失(梯度爆炸)，就像是手机裸机使用时间长了把屏幕刮花。
+而`LSTM`将信息的积累建立在线性自连接的memory cell之上，并靠其作为中间物来计算,好比是用手机屏幕膜作为中间物来观察手机屏幕;
+输入门、遗忘门、输出门的过滤作用好比是手机屏幕膜的反射率、吸收率、透射率三种性质
+> LSTM公式：
+
+<img src="/img/190916post/agrizme.png" >
+经典rnn过程：
+<img src="/img/190916post/LSTM3-SimpleRNN.png" >
+LSTM：
+<img src="/img/190916post/LSTM3-chain-add-handwriting-1.png" >
+添加了一下标注 上面公式中的几个变量标出来：
+<img src="/img/190916post/tuidao.jpg" >
+根据公式推导一遍确实理解的更加深刻，大佬666
+
+# 6、再进一步 交叉熵损失函数(CEEF)的计算
+计算分类问题的时候使用交叉熵算法能够快速有效地得到较为准确的判断条件，[文章·](https://zhuanlan.zhihu.com/p/35709485)从常见的分类误差与均方误差计算结果来进行比较，通过已知概率对所需分类事件进行对数计算求和后得到预测的结果。至于计算方法与具体细节文章中已经做过了详细的介绍。<br>
+> 交叉熵算法计算的损失经过描点画图后得到了一个类似于反比例的凸函数,所以理论上存在最优解：
+
+<img src="/img/190916post/CEEF-loss.jpg" >
+注意：文章中所提到的log均以10为底。
