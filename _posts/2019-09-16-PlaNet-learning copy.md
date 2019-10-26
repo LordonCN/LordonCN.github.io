@@ -105,3 +105,7 @@ LSTM：
 
 <img src="/img/190916post/CEEF-loss.jpg" >
 注意：文章中所提到的log均以10为底。
+
+# 7、最近在深度方面没有多做研究 
+不只是玩了一玩..还有准备下考试和期中稍稍复习复习。<br>
+最近在看莫凡的reinfocement learning
