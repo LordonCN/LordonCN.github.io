@@ -2,7 +2,7 @@
 layout: post
 title: "CPP-面试题积累"
 subtitle: 'C++ '
-author: "xudongdong"
+author: "Lordon"
 header-img: img/jassica/jessica-jung-celebrity.jpg
 catalog: true
 tags:
@@ -92,4 +92,4 @@ int main()
    return 0;
 }
 ```
-# loading...
+# loading..... 荒废了= =  得找个时间重新拾起来，凯叔都找到了30w的offer，我得努力

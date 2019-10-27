@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "google开源RNN网络PlaNet。"
-subtitle: 'planet相关'
-author: "xudongdong"
+title: "Google-PlaNet。"
+subtitle: 'RNN相关'
+author: "Lordon"
 header-img: img/jassica/jessica-jung-celebrity.jpg
 catalog: true
 tags:
