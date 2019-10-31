@@ -15,9 +15,10 @@ tags:
 # 题型
 ### (1)-70-LeetCode
 ```
-/*44正常  45数爆炸
-想法是根据排列组合的想法，改变2的位置 所以需要进行递归运算求阶乘
-效果一般，据说是动态规划？？
+/*30+ 出现结果错误  45数值爆炸
+想法：根据排列组合原理，将数字2逐步增加时的排列组合结果相加即可
+方式：进行递归运算求阶乘
+结果：效果一般,不过会出现数值错误的问题。
 */
 
 #include <iostream>
@@ -86,7 +87,43 @@ int main()
 }
 
 ```
+### (2)-70-LeetCode
+```
+/*  
+想法：动态规划 
+方式：递归运算
+结果：到44层计算超时
+*/
+#include <iostream>
+using namespace std;
 
+# define N  200
+int pb[N];
+
+int dynamic_program(int n) {
+    if((n == 1)||(n == 2)) //递归到最开始两级
+        return n;
+
+    pb[n-1] = dynamic_program(n-1);//上到n-1阶的步数
+    pb[n-2] = dynamic_program(n-2);//上到n-2阶的步数
+    pb[n] = pb[n-1]+pb[n-2]; //从 n-1 与 n-2 一步上来之和
+    return pb[n];
+}
+
+int main()
+{
+    while(1)
+    {
+        int n;
+        cout<<"pls input n:"<<endl;
+        cin>> n;
+
+        pb[N-1] = dynamic_program(n);
+        cout<< pb[N-1]<<endl;
+    }
+}
+
+```
 # 1、[C++中的struct与class有什么区别](https://blog.51cto.com/genwoxuec/503334)
 事实上，C++中保留struct的关键字是为了使C++编译器能够兼容C开发的程序。<br>
 
