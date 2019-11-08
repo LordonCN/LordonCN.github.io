@@ -12,6 +12,72 @@ tags:
 # 0、前言
 > 将学习过程中遇到的知识点做一个总结归纳。
 
+# C primer plus 问题研究
+第六版课本387页最上面部分有一个total = time1+time2+time3;问题的讨论.<br>
+一开始比较怀疑这个方法是否能够成功,因为这个运算符重载函数定义的时候返回的sum对象是返回的数值,如果两两求和之后作为形参传入operator+这个函数应该会出问题.或者说这里我理解的是不是还有什么问题?<br>
+`Time operator+(const Time & t) const;` 或者说第一次两两求和之后的结果应该保存在`某一个临时对象`里! 写到这里我突然明白了,下面代码我注释一下:
+```
+/* 测试重载运算符bug*/
+
+#include <iostream>
+using namespace std;
+ 
+class Time
+{
+    int hours;
+    int minutes;
+    public:
+    Time(int a=0,int b=0)
+    {
+        hours = a;
+        minutes = b;
+    }
+    Time operator+(const Time & t) const;
+    void show();
+};
+
+int main( )
+{                      // 这里我调试了一下四个对象所在地址最后为:
+    Time time1={2,55};  //dee0
+    Time time2(5,46);   //dee8
+    Time time3(10,0);   //def0
+    Time total(0,0);    //def8
+    cout<<"初始状态如下所示:"<<endl;
+    time1.show(); 
+    time2.show(); 
+    time3.show(); 
+    total = time1+time2+time3;
+    cout<<"探寻数据存储真理:"<<endl;
+    time1.show();
+    time2.show();
+    time3.show();
+    cout<<"最后结果是这样的:"<<endl;
+    // total = total+time3;
+    total.show();
+    return 0;
+}
+
+// 第一次:dee0 说明是time1+time2 
+// 第二次:df00 关键在这里 这个地址第一次出现 应该是临时创建的.
+
+Time Time::operator+(const Time & t) const
+{
+    Time sum;                                   //dec0 局部 函数调用玩即销毁
+    
+    sum.minutes = this->minutes+t.minutes;      
+    sum.hours = this->hours+t.hours+sum.minutes/60;
+    sum.minutes = sum.minutes%60;
+    return sum;
+}
+
+void Time::show()
+{
+    cout<<hours<<"小时："<<minutes<<"分钟："<<endl;
+}
+```
+那么就说通了,书上计算顺序其实是出了一点问题.
+
+
 # 题型
 ### (1)-70-LeetCode
 ```
