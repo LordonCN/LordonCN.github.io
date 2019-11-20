@@ -1,0 +1,53 @@
+
+了解下ubuntu脚本编写 自动发送信息到主机
+
+                    Ubuntu指令：	
+**常用**
+进入指定文件夹:   github="/home/dong/Github_Code"   cd ${github}      
+ctrl+r:		查找相似指令 能够快速补全长指令
+压缩A.txt：  	tar -cvf  A.gz   A.txt
+[tmux]：	tmux attach (远程连接可直接关闭对话框，attach后恢复原对话)
+		ctrl+b d 退出session
+**注意**
+pip3 -19.2 version 之后需要使用 --user安装 ：pip3 install --user (whatever)
+pip3更换国内源：  pip3 install -i https://mirrors.aliyun.com/pypi/simple numpy
+指定python运行的GPU： $CUDA_VISIBLE_DEVICES=O/1 python3 main.py           //程序只能使用GPU 在指令开头说明使用哪一个
+下载视频：	you-get 'https://live.bilibili.com/**' 保存在/home
+Github维护：	git add .|git commit -m 'update'|git push|git remote set-url origin XXX.git|git clone github@**.git
+终端获取网页内容：wget URL
+压缩A.txt：  	tar -cvf  A.gz   A.txt
+解压缩： 	tar -xvf B.gz
+[ssh]远程控制：1、ifconfig(内网) curl http://members.3322.org/dyndns/getip(外网)	2、ssh dooncloud@192.168.130.37 输入帐号密码即可连接1
+ln：		快捷方式(符号链接) ln -s Cpp-learning/ Cpp_practice 为文件夹设置快捷方式  
+文件夹重命名：	mv a/ b/   (同文件夹下的改名)
+创建.txt文本：	|重定向方法 $ > hello.txt       | ls -a /uer/bin > /home/dong/Desktop/hello.txt|或者vim text.txt
+使用>>：	|重定向输出内容 可以用来查看程序运行情况 相当于log.txt |ls -a /uer/bin > /home/dong/Desktop/hello.txt 2>&1 |如果发生错误 输出错误信息
+文件夹移动：	mv (当前文件夹下的徐洛冬文件夹)xuluodong/  /home/dong/remote_get_ssh(移动到remote_get_ssh文件夹下)
+[at]定时指令:	at -f practice.sh now+1 minutes
+utorrent启动指令： $utserver -settingspath /opt/utorrent-server-alpha-v3_3/   ---->  浏览器访问http://your-ip-:8080/gui   (ip=ifconfig查看) ----> 用户名admin，密码为空.
+cat\less ：	都是阅读内容  管道用法  " ls -a /use/bin | less "
+less：		|按"q"退出浏览模式 |G翻到最后|g翻到开头
+history:	查看之前使用过的指令
+/usr/share/dict/words:  匹配单词 grep -i '^..j.r$' /usr/share/dict/words      grep -i '^predic*$' /usr/share/dict/words
+[scp]拿文件：	scp -r dooncloud@192.168.130.37:/home/dooncloud/桌面/practice/xuluodong/    (本地存放位置--->) /home/dong/remote_get_ssh/
+		scp -r	jiafan@202.118.18.20:/home/jiafan/pytorch_planet/PlaNet-pytorch /home/dong/Desktop/
+[scp]传文件上文件:
+		scp -r /home/dong/Desktop/planet-flappybird	xld@202.118.18.96:/home/xld/daily_code/pytorch_projects
+                scp -r /home/dong/Github_Code/Reinforcement-learning-with-tensorflow          xld@202.118.18.96:/home/xld/daily_code/PycharmProjects
+
+※安装pycharm(要想启用pygame)：	https://blog.csdn.net/qq_15192373/article/details/81091278
+※安装ubuntu远程登录服务器管理软件：
+		curl -s https://packagecloud.io/install/repositories/asbru-cm/asbru-cm/script.deb.sh | sudo bash
+		sudo apt install asbru-cm
+使用指定GPU：    CUDA_VISIBLE_DEVICES=6 python main.py
+
+
+
+
+
+ 
+
+
+
+
+
