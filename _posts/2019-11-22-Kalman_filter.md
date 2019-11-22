@@ -71,7 +71,7 @@ float Kalman_Filter(float AccZ_Angle,float Gyropitch)
 
 直接移植到某淘宝库上简单调试一下改改直立零点设置即可.
 
-<!-- <.gif> -->
+<img src="/img/191122image/3-gif.gif" >
 
 # 后记 扩展卡尔曼
 > 扩展卡尔曼滤波器(EKF)线性化围绕当前估计的均值的分布，然后在卡尔曼滤波器算法的预测和更新状态中使用该线性化。
