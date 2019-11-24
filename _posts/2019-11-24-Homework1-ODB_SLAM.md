@@ -40,7 +40,7 @@ $ chmod +x build.sh
 $ ./build.sh
 ```
 
-- 2.移植高翔作业中所给程序myslam.cpp以及标定myslam.yaml,首先需要将上述两个文件放到个demo程序里.此处我放到`../ORB_SLAM2-master/Examples/Monocular/myslam.cpp`并且在`../ORB_SLAM2-master/CMakeLists.txt`中添加:
+- 2.移植高翔作业中所给程序myslam.cpp以及标定myslam.yaml,首先需要将上述两个文件放到个demo程序里.此处我放到`../ORB_SLAM2-master/Examples/Monocular/myslam.cpp`(当然是因为Monocular为单目相机)并且在`../ORB_SLAM2-master/CMakeLists.txt`中添加:
 
 ```
 add_executable(myslam
