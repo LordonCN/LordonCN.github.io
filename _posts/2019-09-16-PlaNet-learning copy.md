@@ -6,8 +6,7 @@ author: "Lordon"
 header-img: img/jassica/jessica-jung-celebrity.jpg
 catalog: true
 tags:
-  - PlaNet
-  - RNN LSTM GRU
+  - Deeplearning
   - Tensorflow
   - Cross Entropy Error Func
 ---

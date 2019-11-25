@@ -6,7 +6,6 @@ author: "xudongdong"
 header-img: img/jassica/jasscia2.gif
 catalog: true
 tags:
-  - Maskrnn
   - Deep learning
   - Object detection
 ---

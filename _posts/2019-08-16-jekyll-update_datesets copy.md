@@ -6,9 +6,8 @@ author: "xudongdong"
 header-img: img/jassica/jassica1.gif
 catalog: true
 tags:
-  - Datasets
   - Deep learning
-  - Jekyll
+  - Jekyll Blog
   - Object detection
 ---
 

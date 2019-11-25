@@ -6,8 +6,8 @@ author: "Lordon"
 header-img: img/jassica/jessica-jung-celebrity.jpg
 catalog: true
 tags:
-  - Probabilistic Robotics
-  - ODB_SLAM
+  - SLAMbook
+  - SLAM
 ---
 # 0、关于
 使用摄像头或视频运行 ORB-SLAM2,记录填坑以及实现过程.

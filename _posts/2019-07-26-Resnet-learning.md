@@ -6,9 +6,8 @@ author: "xudongdong"
 header-img: img/jassica/jessica-jung.jpg
 catalog: true
 tags:
-  - CS
   - ResNet
-  - Deep learning
+  - Deeplearning
 ---
 
 > `ResNet`个人理解~

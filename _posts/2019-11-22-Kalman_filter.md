@@ -6,7 +6,7 @@ author: "Lordon"
 header-img: img/jassica/jessica-jung.jpg
 catalog: true
 tags:
-  - Probabilistic Robotics
+  - Algorithm
   - Kalman_filter
 ---
 # 0、关于

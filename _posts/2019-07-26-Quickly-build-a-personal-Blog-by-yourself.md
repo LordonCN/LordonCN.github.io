@@ -6,8 +6,8 @@ author: "xudongdong"
 header-img: img/wallpapers/wall-e-and-eve.jpg
 catalog: true
 tags:
-  - Atom
-  - Github pages
+  - Jekyll Blog
+  - Github
 --- 
 
 > 毕业后实习过程中遇到技术问题总要在 `google`、`stackoverflow`、`CSDN`寻找解决办法，看着各位大佬在自己的Blog上一篇一篇地记录着自己成长的点滴感觉很有意义，我寻思自己好歹也撸点代码怎么不也得自己搞个Blog玩玩？<br>
