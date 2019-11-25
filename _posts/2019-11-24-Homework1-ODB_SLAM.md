@@ -29,7 +29,7 @@ $ cmake --build .
 ```
 
 # 2、ORB_SLAM2编译 (耗时2h)
-- 1.注意安装`libsuitesparse-dev-qt4`需要指定版本,在ORB_SLAM2编译过程中出现了无数warning跟`error`,不过error(unsleep)都是因为缺少`#include <unistd.h>`头文件,添加过后编译通过
+- 1.注意安装`libsuitesparse-dev-qt4`需要指定版本,在ORB_SLAM2编译过程中出现了无数warning跟`error`,不过error(usleep)都是因为缺少`#include <unistd.h>`头文件,添加过后编译通过
 
 ```
 $ sudo apt-get install libopencv-dev libeigen3-dev libqt4-dev qt4-qmake libqglviewer-dev libsuitesparse-dev-qt4 libcxsparse3.1.2 libcholmod-dev
@@ -56,6 +56,9 @@ target_link_libraries(myslam ${PROJECT_NAME})
 ```
 dong@Inspiron-7447:../ORB_SLAM2-master$ ./myslam Vocabulary/ORBvoc.txt Examples/Monocular/myslam.yaml
 ```
+
+<img src="/img/191124image/leshi.png" >
+
 
 # 结语
 跟着课程来做,督促自己一下.
