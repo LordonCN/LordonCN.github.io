@@ -11,6 +11,7 @@ tags:
 
 # 0、前言
 > 将学习过程中遇到的知识点做一个总结归纳。
+<img src="/img/190915image/cppsuanfa.jpg" >
 
 # C primer plus 问题研究
 第六版课本387页最上面部分有一个total = time1+time2+time3;问题的讨论.<br>
