@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "Kalman_filter"
+title: "[小冬搞开发]-基础篇-Kalman_filter"
 subtitle: 'Kalman_filter '
 author: "Lordon"
 header-img: img/jassica/jessica-jung.jpg
 catalog: true
 tags:
   - Algorithm
+  - [小冬搞开发]
   - Kalman_filter
+
 ---
 # 0、关于
 > 最大后验推导和贝叶斯推导之间选一个.
