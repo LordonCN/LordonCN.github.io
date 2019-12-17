@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[小冬搞开发]-基础篇-Kalman_filter"
-subtitle: 'Kalman_filter '
+subtitle: 'Kalman_filter算法'
 author: "Lordon"
 header-img: img/jassica/jessica-jung.jpg
 catalog: true
