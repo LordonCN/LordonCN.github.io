@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "深度学习中数据集启发+Jekyll环境配置+Hexo配置"
+title: "[小冬传经验]-深度学习中数据集启发+Jekyll环境配置+Hexo配置"
 subtitle: 'How to enrich datasets'
 author: "xudongdong"
 header-img: img/jassica/jassica1.gif

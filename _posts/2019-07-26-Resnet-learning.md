@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Its ResNet interesting ?"
+title: "[小冬传经验]-Its ResNet interesting ?"
 subtitle: 'Yes！'
 author: "xudongdong"
 header-img: img/jassica/jessica-jung.jpg

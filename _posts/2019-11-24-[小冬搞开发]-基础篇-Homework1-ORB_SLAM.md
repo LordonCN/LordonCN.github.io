@@ -6,7 +6,6 @@ author: "Lordon"
 header-img: img/jassica/jessica-jung-celebrity.jpg
 catalog: true
 tags:
-  - SLAMbook
   - SLAM
   - [小冬搞开发]
   - Homework

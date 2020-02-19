@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quickly build a personal Blog by yourself"
+title: "[小冬传经验]-Quickly build a personal Blog by yourself"
 subtitle: 'Dont u want to have a try ? Come on !'
 author: "xudongdong"
 header-img: img/wallpapers/wall-e-and-eve.jpg
