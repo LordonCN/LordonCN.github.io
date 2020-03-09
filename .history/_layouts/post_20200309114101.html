@@ -177,3 +177,24 @@ layout: default
 {% endif %}
 
 
+
+<!-- 添加 gitment 评论 -->
+<section id="comments">
+	<div id="commentContainer"></div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css"/>
+
+<script>
+        var gitment = new Gitment({
+            id: '<%= page.date %>',
+            owner: 'Tcloser',
+            repo: 'blog-gitment',
+            oauth: {
+                client_id: '8c912afc7db6b20b8188',
+                client_secret: 'b698339d98f3a74b82d4114186a69906f1dbb3d0',
+            },
+        })
+gitment.render('commentContainer')
+</script>
