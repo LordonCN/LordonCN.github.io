@@ -37,7 +37,7 @@
 - 热衷旅游，足迹遍布北京、河北、河南、陕西、四川、湖南、湖北、安徽、福建、江苏、河北、上海、浙江以及马来西亚，当前正在探索辽宁地区.
 - 喜欢做`视频` <br>
     1.研一参加校英语配音大赛自己导演的`Lion King`获得二等奖<br>
-    2.本科制作的智能车回忆短片[点此跳转](https://www.bilibili.com/video/av54052076).
+    2.本科制作的智能车回忆短片[点此跳转](https://www.bilibili.com/video/av54052076).<br>
     3.NEU无人机仿真平台[点此跳转](https://www.youtube.com/watch?v=7vIM15fYBzw).
 
 
