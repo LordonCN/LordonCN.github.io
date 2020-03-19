@@ -8,6 +8,7 @@ catalog: true
 tags:
   - Deep learning
   - Object detection
+  - [小冬传经验]
 ---
 
 # 0、前言

@@ -9,6 +9,7 @@ tags:
   - Deep learning
   - Jekyll Blog
   - Object detection
+  - [小冬传经验]
 ---
 
 # 0、前言
