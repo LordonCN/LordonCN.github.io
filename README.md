@@ -1,3 +1,7 @@
-hello
+这里是冬冬的笔记本
 
-[![welcome](https://images.app.goo.gl/PXJdXtfsU1qiprM79)](https://www.youtube.com/watch?v=Ssp2Lw6Yzzw)
+
+
+
+首页视频修改路径
+Tcloser.github.io/_includes/friends.html
