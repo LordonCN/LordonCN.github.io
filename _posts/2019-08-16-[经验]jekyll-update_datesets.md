@@ -46,23 +46,40 @@ tags:
 
 ```
 
-# 2、一直被忽视然后真香的Jekyll
+# 2、20190816:一直被忽视然后真香的Jekyll
 - 说实话嗷~~，我一直以为这个不太好用也不知道到底什么用，一直到安装的时候还在怀疑怎么会这么麻烦，又是下载又是版本冲突..还好这篇文在编辑的时候只用`$jekyll serve`便可以`http://localhost:4000/`看效果了～速度炒鸡快！
-
+说的简单点就是新建一terminal<br>
+```
+$ jekyll sever
+```
+打开浏览器窗口即可查看markdown实时预览的效果
+当然这个方法还是要不断地刷新才能看到做出的最新更改<br> 
 - 具体过程参考下面的链接吧～有错误记得百度或者问我哈哈哈哈哈 问题肯定不少～
 
 <img src="/img/190816post/jekyllpeizhi.jpg">
 
-# 3、把自己吹上天的`“强力驱动Hexo”`
+# 3、20190816:把自己吹上天的`“强力驱动Hexo”`
 > 国际惯例：
+
 - [Hexo环境配置流程亲测](https://gcchen.cn/2019/07/31/create-hexo-in-ubuntu/#more)
 - 按步走下去肯定可以的，trust me！ 不过我再送你一个链接，不过不要全看完，直接拉到最底下吧～
 - [How to solve - hexo command not found](https://www.jianshu.com/p/1851395f1f5f?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)
 
 
-> 他说：如果还是不可以 可以尝试通过 sudo npm install hexo-cli -g `重装`一下hexo
+> 如果还是不可以 可以尝试通过 sudo npm install hexo-cli -g `重装`一下hexo
 
-# 重装完之后真的没问题了= =我好难啊..
+ 因为当时我重装完之后真的没问题了= =我好难啊..
+
+
+# 4、20200412:VIM-Plug markdown-preview
+
+最近习惯了使用vim进行文件的编辑以及代码的调试之后发现了这个插件，是真的棒好吗!
+完美解决了markdown实时预览的烦恼，只需要简单地键入
+```
+:markdownpreview
+```
+甚至直接打个`markdown`然后Tab提示补全内容，在浏览器中会自动打开效果预览，我太爱了:)
+
 
 ## 参考文档
 - [Jekyll本地搭建开发环境以及Github部署流程](https://www.jianshu.com/p/f37a96f83d51)
