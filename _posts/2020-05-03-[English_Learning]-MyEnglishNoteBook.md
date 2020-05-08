@@ -9,22 +9,68 @@ tags:
   - [小冬学英语]
 ---
 
-#### May 5 2020:
-1. Within minutes, it's raining, and I'm drenched to the skin again.
-2. The rain has just made everything a nightmare. 
-3. h
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-
-
+#### May 7 2020:
 ###### Sentences:
+<!--chance--> 
+1. Now.there is an unexpected turn of events.
+<!--excellent--> 
+2. What a view! I need to warm up a bit.
+<!--inspired by beautiful scene--> 
+3. It's feels like one of those tie where the mountains really give you strength.
+<!--from the bitter experience i learned that--> 
+4. I know from bitter experience that ()
+<!--what a beautiful scene--> 
+5. Really! When the sun out like this, this mountain is just breathtaking!
+<!--i made it finally--> 
+6. And at last.I'm through!
+
+###### <kbd>Words:</kbd>
 
 
+
+
+#### May 6 2020:
+###### Sentences:
+<!--not: you will die--> 
+1. You are putting your life on the line.
+<!--not: manna dropping from sky--> 
+2. Looks like manna from heaven.
+<!--your dream of--> 
+3. () And this is the answer to your prayers.
+<!--1/4--> 
+4. Which is makes up a  quarter of ()
+<!--most important is something --> 
+5. () is your biggest priority.
+<!--first time do something--> 
+6. I have never do (), but I have now.
+<!--too hard--> 
+7. Quite a old camel./quite a hard work.
+
+
+###### <kbd>Words:</kbd>
+heaven prayers
+
+#### May 5 2020:
+###### Sentences:
+<!--like a swimming chicken--> 
+1. Within minutes, it's raining, and I'm `drenched` to the skin again.
+2. The rain has just made everything a `nightmare`. 
+3. If you were got like `bitten by a snake` or `stung by a scorpin`.
+4. Something would help if you try it.
+5. It's like a kind of big mix of vegetables.
+<!--just so so--> 
+6. Better than nothing, it can pick-me-up in the desert.
+7. The sun is so strong.
+8. This is `roasting`, and this is cooler, but this one is `significantly` cooler.
+<!--eat something--> 
+9. What I gonna to do is pop it in my mouth.
+
+10. All of this area here is called ()
+
+
+###### <kbd>Words:</kbd>
+drench  <space>  nightmare     scorpion    roasting   significantly
+<br>tennis ball sized rocks
 
 #### May 4 2020:
 
