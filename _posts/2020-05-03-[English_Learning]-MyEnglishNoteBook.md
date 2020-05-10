@@ -13,11 +13,30 @@ tags:
 ###### Sentences:
 1. It' like chewing a gum.
 2. Today I buy a keyboard and it works well, It's so nice,which makes me happy.
-3. 
+3. It's going to be a real benefit to me out here.
+4. If u do get lost like SB,try to keep calm and 
+`come up with` a plan.
+5. It's about 5pm now and it's almost dusk.
+<!--explane  how to make fire in someplace and with something --> 
+6. And the best way here *in the Rockies* 
+*with all this dry pine and spruce* 
+is the hand `drill method`.
+<br>
+7. My disc knife is already proving useful.
+<!--use fire to burn something no need--> 
+8. I want that(bad things) to be burnt well and truly.
+9. I wonder how much sleep I'll get 
+<!--if you want to explane what you are not sure--> 
+10. It's so hard to tell what it is, but ...
+It's seems like.....
 
 
 
 ###### <kbd>Words:</kbd>
+方位bearings
+迷惑deceptive 
+
+
 
 
 #### May 7 2020:
@@ -35,8 +54,6 @@ tags:
 <!--i made it finally--> 
 6. And at last.I'm through!
 
-###### <kbd>Words:</kbd>
-
 
 
 
@@ -51,7 +68,8 @@ tags:
 <!--1/4--> 
 4. Which is makes up a  quarter of ()
 <!--most important is something --> 
-5. () is your biggest priority.
+5. () is your biggest priority.<br>
+the priority really for me now is do something.
 <!--first time do something--> 
 6. I have never do (), but I have now.
 <!--too hard--> 
