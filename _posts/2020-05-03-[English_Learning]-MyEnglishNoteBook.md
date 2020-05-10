@@ -8,6 +8,17 @@ catalog: true
 tags:
   - [小冬学英语]
 ---
+#### May 8 2020:
+
+###### Sentences:
+1. It' like chewing a gum.
+2. Today I buy a keyboard and it works well, It's so nice,which makes me happy.
+3. 
+
+
+
+###### <kbd>Words:</kbd>
+
 
 #### May 7 2020:
 ###### Sentences:
