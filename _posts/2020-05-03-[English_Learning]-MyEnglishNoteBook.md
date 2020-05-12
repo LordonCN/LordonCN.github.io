@@ -8,6 +8,31 @@ catalog: true
 tags:
   - [小冬学英语]
 ---
+
+#### May 9 2020:
+
+###### Sentences:
+1. It's like chewing gum.
+<!--choice--> 
+2. There is only one option.
+<!--distance and make mistake--> 
+3. It's about 100 feet and don't hit wrong.
+<!--wonderful work--> 
+4. These things are absolutely brilliant.
+<!--in many different ways--> 
+5. You can use it for many different task.
+6. That's honestly a bit much.
+<!--under big pressure--> 
+7. I'm getting tired and feeling strain.
+<!--i can't do / can do--> 
+8. something just out my reach./in my reach.
+<!--try myself--> 
+9. At the moment I'm honest struggling be so much on my own.
+
+###### <kbd>Words:</kbd>
+strain brilliant hit_wrong  
+
+
 #### May 8 2020:
 
 ###### Sentences:
