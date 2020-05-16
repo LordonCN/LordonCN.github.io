@@ -8,18 +8,39 @@ catalog: true
 tags:
   - [小冬学英语]
 ---
-#### May 10 2020:
+##### May 17 2020:
+
+###### Sentences:
+<!--匍匐前进--> 
+1. Monkey crawl your way out.
+<!--get hurt--> 
+2. I'm just black and blue.
+
+##### May 16 2020:
 
 ###### Sentences:
 1. It's beautiful but also pretty intimidating.
 2. Miles and miles in every direction.
 <!--change i don't konw--> 
 3. I have no idea....
+<!--want to do--> 
+4. So that's what I am going to head for.
+<!--first to do --> 
+5. But priority number one for me now is...
+<!--说得轻巧--> 
+6. Everything is easier said than.
+<!--luckly to do --> 
+7. There is a good chance that..
+<!--can't fall asleep--> 
+8. Noisy and so on really disturbed me so much,It could be a long night.
 
 ###### <kbd>Words:</kbd>
-detecte classification 
-dense downhill humid(It's so humid)
-
+detecte classification  intimidate
+dense downhill 
+<!--潮湿--> 
+humid(It's so humid)
+<!--注释掉的代码--> 
+commented-out code
 #### May 9 2020:
 
 ###### Sentences:
