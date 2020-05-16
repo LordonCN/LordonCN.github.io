@@ -11,19 +11,14 @@ tags:
 #### May 10 2020:
 
 ###### Sentences:
-1. 
-2. 
-3. 
-4. pressure
-5. 
-6. 
-7. 
-8. 
-9. 
+1. It's beautiful but also pretty intimidating.
+2. Miles and miles in every direction.
+<!--change i don't konw--> 
+3. I have no idea....
 
 ###### <kbd>Words:</kbd>
 detecte classification 
-
+dense downhill humid(It's so humid)
 
 #### May 9 2020:
 
