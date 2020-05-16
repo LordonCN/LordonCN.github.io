@@ -8,6 +8,22 @@ catalog: true
 tags:
   - [小冬学英语]
 ---
+#### May 10 2020:
+
+###### Sentences:
+1. 
+2. 
+3. 
+4. pressure
+5. 
+6. 
+7. 
+8. 
+9. 
+
+###### <kbd>Words:</kbd>
+detecte classification 
+
 
 #### May 9 2020:
 
@@ -21,6 +37,7 @@ tags:
 4. These things are absolutely brilliant.
 <!--in many different ways--> 
 5. You can use it for many different task.
+<!--it's too much--> 
 6. That's honestly a bit much.
 <!--under big pressure--> 
 7. I'm getting tired and feeling strain.
