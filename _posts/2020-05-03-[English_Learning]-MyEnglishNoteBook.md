@@ -21,7 +21,7 @@ tags:
 ###### Sentences:
 1. It's beautiful but also pretty intimidating.
 2. Miles and miles in every direction.
-<!--change i don't konw--> 
+<!--change i don't know--> 
 3. I have no idea....
 <!--want to do--> 
 4. So that's what I am going to head for.
@@ -29,12 +29,13 @@ tags:
 5. But priority number one for me now is...
 <!--说得轻巧--> 
 6. Everything is easier said than.
-<!--luckly to do --> 
+<!--luckily to do --> 
 7. There is a good chance that..
 <!--can't fall asleep--> 
-8. Noisy and so on really disturbed me so much,It could be a long night.
+8. Noisy and so on really disturbed me so much,So It could be a long night.
 
 ###### <kbd>Words:</kbd>
+
 detecte classification  intimidate
 dense downhill 
 <!--潮湿--> 
@@ -63,7 +64,7 @@ commented-out code
 9. At the moment I'm honest struggling be so much on my own.
 
 ###### <kbd>Words:</kbd>
-strain brilliant hit_wrong  
+strain brilliant hit-wrong  
 
 
 #### May 8 2020:
@@ -75,7 +76,7 @@ strain brilliant hit_wrong
 4. If u do get lost like SB,try to keep calm and 
 `come up with` a plan.
 5. It's about 5pm now and it's almost dusk.
-<!--explane  how to make fire in someplace and with something --> 
+<!--explain  how to make fire in someplace and with something --> 
 6. And the best way here *in the Rockies* 
 *with all this dry pine and spruce* 
 is the hand `drill method`.
