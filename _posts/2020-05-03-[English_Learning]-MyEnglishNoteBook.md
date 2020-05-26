@@ -8,16 +8,52 @@ catalog: true
 tags:
   - [小冬学英语]
 ---
-##### May 17 2020:
+##### May 20 2020:
 
+###### Sentences:
+
+###### <kbd>Words:</kbd>
+
+
+##### May 19 2020:
+
+###### Sentences:
+<!--casually 随身携带--> 
+1. I will take a notebook with me.
+
+###### <kbd>Words:</kbd>
+
+
+##### May 18 2020:
+###### Sentences:
+1. If you want to go faster, go alone. If you want to go far, go together.
+2. You should absolutely, looks very interesting. 
+3. OK, Time to get on it. It's time to do.
+4. The end is insight.
+5. If you want to do something,you need to...,but now is better than nothing.
+6. The downside is ..<br>
+The advantage is ..
+7. Now  this is very welcome.(pretty good)
+8. That's a bit faster than I `intended`.
+9. There is an old Chinese proverb that says: Tomorrow will be  a better day.
+
+
+###### <kbd>Words:</kbd>
+intend 预期 proverb (old saying)
+trick 技巧
+eerie 怪事
+formidable task 艰巨的任务
+
+
+##### May 17 2020:
 ###### Sentences:
 <!--匍匐前进--> 
 1. Monkey crawl your way out.
 <!--get hurt--> 
 2. I'm just black and blue.
+3. 
 
 ##### May 16 2020:
-
 ###### Sentences:
 1. It's beautiful but also pretty intimidating.
 2. Miles and miles in every direction.
@@ -42,8 +78,8 @@ dense downhill
 humid(It's so humid)
 <!--注释掉的代码--> 
 commented-out code
-#### May 9 2020:
 
+#### May 9 2020:
 ###### Sentences:
 1. It's like chewing gum.
 <!--choice--> 
@@ -68,7 +104,6 @@ strain brilliant hit-wrong
 
 
 #### May 8 2020:
-
 ###### Sentences:
 1. It' like chewing a gum.
 2. Today I buy a keyboard and it works well, It's so nice,which makes me happy.
