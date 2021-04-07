@@ -35,7 +35,7 @@ tags:
 
 **坑：**通常删去链表结点的方法是让被删结点前一个节点指向被删结点后一个节点，但是此方法对head不起作用，需额外判断。
 
-**链接**：[leetcode19](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_19m_list_deleteNlist.cpp)
+**链接**：[leetcode19](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_19m_list_deleteNlist.cpp)
 
 
 
@@ -46,7 +46,7 @@ tags:
 
 **我的思路**：思路其实很简单，从小到大两链表都有对应的指针，一个一个遍历比较大小即可，但是实现的时候把代码写的简洁却不是一件容易的事。下边放出官方给出的效率最高的代码之一。
 
-**链接**：[leetcode21](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_21m_list_combinTwoList.cpp)
+**链接**：[leetcode21](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_21m_list_combinTwoList.cpp)
 
 
 ### 24M. 成对地交换链表结点
@@ -55,7 +55,7 @@ tags:
 
 **我的思路**：很平常的思路，一道练习链表节点操作的题。
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_24m_list_changeTwoNode.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_24m_list_changeTwoNode.cpp)
 
 ### 31M. 下一种排序（Next Permutation）
 
@@ -66,7 +66,7 @@ tags:
 **坑**：一开始没想到把第一个数翻转。另一个坑就是两个loop的次序一开始想错了。
 
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_31m_vector_nextNumber.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_31m_vector_nextNumber.cpp)
 
 **思考**：如果问题改成上一个排序的话，应该怎么做？同样还是找到位于最后的一对数使其组成降序，将他们交换顺序，之后再把第一个数后边的所有数翻转。
 
@@ -79,7 +79,7 @@ tags:
 **坑**：当数组只有一个元素时，需要特别注意。
 
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_33m_vector_findTargetInnums.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_33m_vector_findTargetInnums.cpp)
 
 ### 34M. 在有序序列中找到元素的第一个和最后一个位置
 
@@ -89,7 +89,7 @@ tags:
 
 **坑**：对于常见的二分法查找，在每次迭代的过程中为了防止最后left = right + 1时的死循环，使left = middle + 1和right = middle - 1是有效的方法。但是对于寻找该元素的第一个和最后一个位置，这样的做法不合适。因为循环的终止条件并不是middle等于或不等target，而是middle等于target但是middle的下一个不是target。所以在之后的二分法中，迭代只能是left = middle 和 right = middle 而不再加减1。这样需要额外的防止死循环的方法—当middle等于left时，判断并终止。
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_34m_vector_findTargetLocation.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_34m_vector_findTargetLocation.cpp)
 
 ### 56M. 融合区间
 
@@ -97,7 +97,7 @@ tags:
 
 **我的思路**：按照区间头从小到大排序，比较好分析一些。对每对相邻区间排序，如果后者的头小于前者的尾，则可以混合，所有相邻的混合过的区间可用start和end统一表示成一个区间。这道题可分为允许和不允许对原输入进行操作的，如果允许改变输入，那么混合过后可以直接删除多余的那个，改变另一个的尾部，而剩去start和end进行计数，当然从提交结果来看，vector的erase操作是相当费时的。
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_56m_vector_mergelap.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_56m_vector_mergelap.cpp)
 
 
 ### 61M. 轮换链表
@@ -106,7 +106,7 @@ tags:
 
 **我的思路**：思路可分为寻找支点(pivot)和寻找移动过后的链表头。支点即位倒数第k个数的前一个数。
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_61m_list_rotateRight.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_61m_list_rotateRight.cpp)
 
 ### 86M. 分割链表
 
@@ -114,7 +114,7 @@ tags:
 
 **我的思路**：采用双指针方法，一个指针负责遍历，另一个指针负责指向已处理好的小于分割数的节点的最前端。为了方便处理head的问题，添加了哨兵便于操作（反而使占用内存变大了）。
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_86m_list_partition.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_86m_list_partition.cpp)
 
 
 ### 141E. 检测链表是否有环
@@ -157,7 +157,7 @@ TODO:
 
 **我的思路**：无脑转换，写的复杂一点，算起来很快。
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_12m_string_intToRoman.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_12m_string_intToRoman.cpp)
 
 
 ### 151M.翻转字符串中的单词
@@ -166,7 +166,7 @@ TODO:
 
 **思路**：遍历后组成新的字符串，可用vector和stack来实现；也可直接在原字符串上进行更改，下边用这三种方法实现，其中因为在原字符串上涉及到很多erase操作，所有效率最低，vector效率最高。
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_151m_string_reverseWord.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_151m_string_reverseWord.cpp)
 
 ## III. 栈和队列
 
@@ -180,7 +180,7 @@ TODO:
 
 **优化**：如果本身括号的个数是奇数，那么一定不会是有效的。
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_20s_stack_validkuohao.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_20s_stack_validkuohao.cpp)
 
 ### 84H. 直方图中最大的长方形
 
@@ -190,7 +190,7 @@ TODO:
 
 **我的思路**：
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_84h_stack_largestRectangleArea.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_84h_stack_largestRectangleArea.cpp)
 
 ### 150M. 逆波兰表达式
 
@@ -200,7 +200,7 @@ TODO:
 
 **坑**：减法和除法中减数和除数都是位于栈顶的；注意判断是否是字符时负数的符号也位于字符串首，不要误判为减号。
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_150m_string_bolanfunc.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_150m_string_bolanfunc.cpp)
 
 
 
@@ -214,7 +214,7 @@ TODO:
 
 )
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_1019m_list_nextbiggernumber.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_1019m_list_nextbiggernumber.cpp)
 
 ## IV. 树
 
@@ -224,7 +224,7 @@ TODO:
 
 **我的思路**：分为用队列迭代和递归的方法，前者用队列实现，后者递归的时候左树和右树传进去的子节点应刚好左右相反。
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_1019m_list_nextbiggernumber.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_1019m_list_nextbiggernumber.cpp)
 
 ### 102M. 二叉树的层序遍历
 
@@ -232,7 +232,7 @@ TODO:
 
 **我的思路**：一般层序遍历都是用队列实现，每次压入一层，弹出时将弹出节点的非空左右孩子再压入队列，直到队列为空，这里需要计数来区分不同层。这里也可以用迭代遍历，迭代函数中有一引用形参表示当前的层数，在对应层数的vector中压入val。
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_102m_tree_levelOrder.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_102m_tree_levelOrder.cpp)
 
 ### 103M. 二叉树之字形层序遍历
 
@@ -240,7 +240,7 @@ TODO:
 
 **我的思路**：这种循环往复的自然想到用栈来实现，但是和队列有所不同的是，这里是用两个栈实现，并且从左到右和从右到左的时先压入左孩子还是先压入右孩子也不同，需要具体事例具体分析。
 
-**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_103m_tree_zigzagLevelOrder.cpp)
+**链接**：[leetcode](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_103m_tree_zigzagLevelOrder.cpp)
 
 ### 104E. 二叉树的最大深度
 
@@ -1114,17 +1114,17 @@ public:
 
 **我的思路**：此题目可以充分运用swap 与 reverse两库函数解决，首先顺序遍历数组并进行对对角线两侧数值swap，然后对每一行reverse即可。
 
-**链接**: [leetcode48](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_48m_vector_2dVectorRotate.cpp)
+**链接**: [leetcode48](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_48m_vector_2dVectorRotate.cpp)
 
 ### 78M. 子集
 
 **问题描述**：给出一个包含不同的元素的序列，求出他的所有子集并输出。
 
 **我的思路**：采用推归的形式，由于包含n个元素的集合就是在包含n-1个元素的集合的所有子集上添上这个元素并和原来的子集合并，因此可以一步一步推出所有子集。
-此题目与[17](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_17h_string_letterCombinations.cpp) [46](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_46m_vector_permute_quanpailie.cpp) 
-[48](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_48m_vector_2dVectorRotate.cpp) 类似.
+此题目与[17](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_17h_string_letterCombinations.cpp) [46](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_46m_vector_permute_quanpailie.cpp) 
+[48](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_48m_vector_2dVectorRotate.cpp) 类似.
 
-**链接**:[leetcode78](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_78m_vector_subSet.cpp)
+**链接**:[leetcode78](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_78m_vector_subSet.cpp)
 
 ### 264M. 丑数II
 
@@ -1134,7 +1134,7 @@ public:
 
 **我的思路**: 直接统计吧，主要是学怎么在有质因数条件下判断成立于否。
 
-**链接**：[leetcode264](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_264m_judge_nthUglyNumber.cpp)
+**链接**：[leetcode264](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_264m_judge_nthUglyNumber.cpp)
 
 
 ## VIII. 广度优先搜索
@@ -1149,7 +1149,7 @@ public:
 
 **注意**： 1先添加左括号 回溯的时候清除左括号 添加右括号 .2一开始想的时候就没有搞清楚这个该怎么递归 想成了() ()() ()()() 三种情况
 
-**链接**：[leetcode22](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_22m_vector_generateKuohao.cpp))
+**链接**：[leetcode22](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_22m_vector_generateKuohao.cpp))
 
 ### 36M. 有效的数独*
 
@@ -1157,7 +1157,7 @@ public:
 
 **我的思路**：遍历三遍，分别判定数独有效的三个条件。即横竖和九宫格不出现相同的数字。对于每次遍历，都采用一组hash来保存。缺点：效率低，遍历次数多。
 
-**链接**：[leetcode36](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_36m_vector_isValidSudoku.cpp)
+**链接**：[leetcode36](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_36m_vector_isValidSudoku.cpp)
 
 **优化**：最好能一次遍历完，需要更改数据结构，使用bitmap效率会很高。
 
@@ -1169,9 +1169,9 @@ public:
 
 **我的思路**：从大到小遍历 做自减计算即可(不过这样写有bug)  ，后改用递归 比较好写。
 
-**链接**：[leetcode39](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_39m_vector_combinationSum.cpp)<br>
+**链接**：[leetcode39](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_39m_vector_combinationSum.cpp)<br>
 
-**链接**：[leetcode39-digui](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_39m_vector_combinationSumDigui.cpp)
+**链接**：[leetcode39-digui](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_39m_vector_combinationSumDigui.cpp)
 
 ### 40M. 组合之和II
 
@@ -1180,7 +1180,7 @@ public:
 **我的思路**：按照深度优先搜索的思路，从后往前遍历，对每个数，判断当前remain是否为0（每次加入解集一个数，remain即减去这个数），可以分为将这个数加入当前解集合和不加入当前解集合，然后分为两个支路继续递归。需要注意的是如何排除重复的解：出现重复解的原因在于，给出的candidates中本身有重复的元素，那么则需要在上边两个递归前加入条件判断语句——**如果前后两个相同的元素，前者没有被加入到本次解集中，那么在前者所产生的支路，后者也不加入解集。**举例：
 参考 39题 直接在39基础上修改后出现最后结果中存在重复的情况 此处添加vector清除重复元素部分
 
-**链接**：[leetcode40-digui](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_40m_vector_combinationSum2Digui.cpp)
+**链接**：[leetcode40-digui](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_40m_vector_combinationSum2Digui.cpp)
 
 ```c++
     // 2d清除vector中重复元素
@@ -1206,7 +1206,7 @@ public:
 
 **我的思路**：由于要检测重复，所以选择hash map来实现滑动窗口。
 
-**链接**：[leetcode03-for-for](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_03m_string_lengthOfLongestSubstring.cpp)
+**链接**：[leetcode03-for-for](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_03m_string_lengthOfLongestSubstring.cpp)
 
 ### 11M. 能盛最多水的容器
 
@@ -1216,7 +1216,7 @@ public:
 
 **我的思路**：这道题如果暴力求解需要找出两两配对的情况，复杂度在O(n^2)。现在比较巧妙的方法是，首先取首尾两个板子，然后逐渐向中间移动，直到碰头，规则是：左右两边较低一侧的指针往中间移动。这样能保证最大的情况一定能被遍历到，且只用O(n)的时间。（证明略，用反证法比较容易想清楚。）
 
-**链接**：[leetcode11-twoPointer](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_11m_vector_maxArea.cpp)
+**链接**：[leetcode11-twoPointer](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_11m_vector_maxArea.cpp)
 
 ## XII. 动态规划
 
@@ -1231,7 +1231,7 @@ public:
 
 **我的思路**：使用贪心与动态规划 不过`动态在哪里`还不太理解
 
-**链接**：[leetcode53](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_53e_vector_maxSubArray.cpp)
+**链接**：[leetcode53](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_53e_vector_maxSubArray.cpp)
 
 ### 120M. 三角形的最短路径
 
@@ -1250,7 +1250,7 @@ public:
 
 **我的思路**：递归方式实现反向中序遍历,可以看做树
 
-**链接**：[leetcode120](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_240m_vector_searchNumberInMatrix.cpp)
+**链接**：[leetcode120](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_240m_vector_searchNumberInMatrix.cpp)
 
 
 ### 240M. 搜索二维矩阵 II
@@ -1259,7 +1259,7 @@ public:
 
 **我的思路**：两种方法1、判断number是否大于当前行最小值，小于当前行最大值，遍历。2、从右上角开始查找，小了就下移，大了就左移，直到结束。
 
-**链接**：[leetcode240](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_240m_vector_searchNumberInMatrix.cpp)
+**链接**：[leetcode240](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_240m_vector_searchNumberInMatrix.cpp)
 
 ### 232E. 用栈实现队列
 
@@ -1267,7 +1267,7 @@ public:
 
 **我的思路**：设计辅助栈作为交换存储即可
 
-**链接**：[leetcode232](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_232e_stack_MyQueue.cpp)
+**链接**：[leetcode232](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_232e_stack_MyQueue.cpp)
 
 ### 739M. 隔天的温度
 
@@ -1275,7 +1275,7 @@ public:
 
 **我的思路**：1、双循环遍历 2、最小栈实现
 
-**链接**：[leetcode739](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_739m_vector_dailyTemperatures.cpp)
+**链接**：[leetcode739](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_739m_vector_dailyTemperatures.cpp)
 
 ### 01E.两数之和 
 
@@ -1285,7 +1285,7 @@ public:
 
 **我的思路**:使用hashmap 遍历之后查找即可
 
-**链接**：[leetcode01](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_01e_vector_twoSum.cpp)
+**链接**：[leetcode01](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_01e_vector_twoSum.cpp)
 
 ### 128H.最大长度序列
 
@@ -1295,7 +1295,7 @@ public:
 
 **我的思路**:使用hashset 首先将所有数值添加到set中去重，再一遍查找大小值一遍擦除set中内容即可。
 
-**链接**：[leetcode128](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_128h_vector_longestConsecutive.cpp)
+**链接**：[leetcode128](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_128h_vector_longestConsecutive.cpp)
 
 ### 332M.重新安排行程
 
@@ -1305,7 +1305,7 @@ public:
 
 **我的思路**:综合运用vector中的erase reverse等方法，结合stack对结果进行比较与保存。
 
-**链接**：[leetcode332](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_332m_vector_findItinerary.cpp)
+**链接**：[leetcode332](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_332m_vector_findItinerary.cpp)
 
 ### 69E.求平方根
 
@@ -1313,7 +1313,7 @@ public:
 
 **我的思路**:通过比较 number a / mid 值大小来判断是大了还是小了
 
-**链接**：[leetcode69](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_69e_search_sqrt.cpp)
+**链接**：[leetcode69](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_69e_search_sqrt.cpp)
 
 ### 76H.最小子字符串
 
@@ -1323,7 +1323,7 @@ public:
 
 **我的思路**:使用hash对给定字符进行存储，当hash.find成立之后进行长度计算并截取保存，一次遍历即可完成。
 
-**链接**：[leetcode76](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_76h_string_minsubcontinuestring.cpp)
+**链接**：[leetcode76](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_76h_string_minsubcontinuestring.cpp)
 
 ### 167E.两数之和2
 
@@ -1333,7 +1333,7 @@ public:
 
 **我的思路**:双指针 左右移动即可。
 
-**链接**：[leetcode167](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_167e_vector_twoSum2.cpp)
+**链接**：[leetcode167](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_167e_vector_twoSum2.cpp)
 
 ### 88E.两数组按顺序合并
 
@@ -1343,7 +1343,7 @@ public:
 
 **我的思路**:从后向前遍历1&2，谁大就把谁添加到1的后面，最后如果2添加完毕直接返回，1添加完毕那么还要对2遍历结束才能返回。
 
-**链接**：[leetcode88](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_88e_vector_mergeTwoArray.cpp)
+**链接**：[leetcode88](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_88e_vector_mergeTwoArray.cpp)
 
 
 ### 765H.情人节交换位置
@@ -1354,20 +1354,20 @@ public:
 
 **我的思路**:使用hash进行位置存储与查找，从左到右遍历遇到不符合条件的即进行交换操作，一次交换即可。
 
-**链接**：[leetcode765](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_765h_vector_minSwapsCouples.cpp)
+**链接**：[leetcode765](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_765h_vector_minSwapsCouples.cpp)
 
 
 ### 205E,242E,647E,696E.string专题 简单题
 
 **专注内容**: string操作 简单
 
-**链接**：[leetcode205](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_205e_string_isIsomorphic.cpp)
+**链接**：[leetcode205](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_205e_string_isIsomorphic.cpp)
 
-**链接**：[leetcode242](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_242e_string_isAnagram.cpp)
+**链接**：[leetcode242](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_242e_string_isAnagram.cpp)
 
-**链接**：[leetcode647](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_647m_string_countSubstringHuiwen.cpp)
+**链接**：[leetcode647](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_647m_string_countSubstringHuiwen.cpp)
 
-**链接**：[leetcode696](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_696e_string_countBinarySubSttrings.cpp)
+**链接**：[leetcode696](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_696e_string_countBinarySubSttrings.cpp)
 
 
 ### 81M.旋转数组查找数字
@@ -1378,7 +1378,7 @@ public:
 
 **我的思路**:二分查找变形，首先进行左右区间判断，进而加强条件判断是否单调，否则向反方向移动。
 
-**链接**：[leetcode81](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_81m_vector_searchRotaarray.cpp)
+**链接**：[leetcode81](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_81m_vector_searchRotaarray.cpp)
 
 
 ### 413M.求差为1的等差数列个数
@@ -1390,7 +1390,7 @@ public:
 **我的思路**:将所有数字存储到hash中，用来方便查找下一个数字是否存在hash.find(i) != hash.end()即可添加到temp中。
 for(auto i:nums) 循环可逐个取出每一个数列的开头元素，内加一个循环即可。vector.erase()用于擦除vector，方便使用。
 
-**链接**：[leetcode413](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_413m_DP_dengchaShuLie.cpp)
+**链接**：[leetcode413](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_413m_DP_dengchaShuLie.cpp)
 
 
 ### 70M.爬台阶
@@ -1403,7 +1403,7 @@ for(auto i:nums) 循环可逐个取出每一个数列的开头元素，内加一
 2-动态规划的方法：每一层的可能结果可由上一次或者上两层所有可能结果求和得到，意思就是对于第一层有1种结果，第二层有两种结果，若表示为`[1,2]`,
 那么第三层即可由1+2得到`[1,2,1+2]`以此类推，就成了两数求和的形式。
 
-**链接**：[leetcode70](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_70e_DP_climbstairs.cpp)
+**链接**：[leetcode70](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_70e_DP_climbstairs.cpp)
 
 ### 198M.抢劫最大化
 
@@ -1413,7 +1413,7 @@ for(auto i:nums) 循环可逐个取出每一个数列的开头元素，内加一
 
 **我的思路**:考虑动态规划的状态转移方程`dp[i] = max(dp[i-1],dp[i-2]+nums[i])`
 
-**链接**：[leetcode198](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_198m_DP_houserobber.cpp)
+**链接**：[leetcode198](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_198m_DP_houserobber.cpp)
 
 ### 64M.二维最短路径
 
@@ -1423,7 +1423,7 @@ for(auto i:nums) 循环可逐个取出每一个数列的开头元素，内加一
 
 **我的思路**:考虑动态规划的状态转移方程`dp[i][j] = min(dp[i-1][j],dp[i][j-1])`
 
-**链接**：[leetcode64](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_64m_DP_minPath.cpp)
+**链接**：[leetcode64](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_64m_DP_minPath.cpp)
 
 ### 516M.最长回文子序列
 
@@ -1434,7 +1434,7 @@ for(auto i:nums) 循环可逐个取出每一个数列的开头元素，内加一
 **我的思路**:子序列问题本身就相对子串、子数组更困难一些，因为前者是不连续的序列，而后两者是连续的.
 设定二维数组dp，根据状态转移方程：想求 `dp[i][j]` 需要知道 `dp[i+1][j-1]`，`dp[i+1][j]`，`dp[i][j-1]` 这三个位置大小关系。
 
-**链接**：[leetcode516](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_516m_DP_longesthuiwenxulie.cpp)
+**链接**：[leetcode516](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_516m_DP_longesthuiwenxulie.cpp)
 
 ### 28M.寻找最小字符串
 
@@ -1445,7 +1445,7 @@ for(auto i:nums) 循环可逐个取出每一个数列的开头元素，内加一
 **我的思路**:1、首先利用vector.find函数直接定位子字符串首字符位置，然后截取对比即可。
 2、滑动窗口方法通过取固定大小的一段字符出来 与目标字符串进行对比判断。
 
-**链接**：[leetcode28](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_28m_string_findSubstring.cpp)
+**链接**：[leetcode28](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_28m_string_findSubstring.cpp)
 
 
 ### 300M.最小增量序列
@@ -1456,7 +1456,7 @@ for(auto i:nums) 循环可逐个取出每一个数列的开头元素，内加一
 
 **我的思路**: 参考别人思路 
 
-**链接**：[leetcode300](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode/leetcode_300m_DP_longestincreasexulie.cpp)
+**链接**：[leetcode300](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_300m_DP_longestincreasexulie.cpp)
 
 
 
