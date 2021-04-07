@@ -6,7 +6,7 @@ author: "Lordon"
 header-img: img/jassica/jessica-jung-celebrity.jpg
 catalog: true
 tags:
-  - [小冬撸代码]
+  - [小冬备考]
 ---
 
 # LeetCode 刷题记录
