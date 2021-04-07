@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[小冬撸代码]"
-subtitle: '总结CPP经验'
+title: "[小冬总结题]"
+subtitle: '刷过的leetcode题目思路整理'
 author: "Lordon"
 header-img: img/jassica/jessica-jung-celebrity.jpg
 catalog: true
@@ -25,9 +25,7 @@ tags:
 
 **优化**：判断是否溢出的代码`if((res > INT_MAX / 10) || (temp >= INT_MAX % 10 && res == INT_MAX / 10)) return INT_MAX;` 和`if((res == INT_MIN / 10 && -temp <= INT_MIN % 10) || res < INT_MIN / 10) return INT_MIN;`。
 
-**链接**：[leetcode8](code_learning/leetcode/leetcode_08m_string_stringtoint.cpp)
-
-
+**链接**：[leetcode8](https://github.com/Tcloser/leetcode-prectice/tree/main/code_learning/leetcode/leetcode_08m_string_stringtoint.cpp)
 
 ### 19M. 移除倒数第n个链表结点。
 
