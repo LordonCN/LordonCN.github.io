@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[English-Learning]-MyEnglishNoteBook"
+title: "[小冬学英语]-MyEnglishNoteBook"
 subtitle: 'Constant dropping wears the stone '
 author: "Lordon"
 header-img: img/jassica/jessica-jung-celebrity.jpg

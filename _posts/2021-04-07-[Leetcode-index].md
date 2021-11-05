@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "[小冬总结题]"
+title: "[小冬找工作]-Leetcode刷题"
 subtitle: '刷过的leetcode题目思路整理'
 author: "Lordon"
 header-img: img/jassica/jessica-jung-celebrity.jpg
 catalog: true
 tags:
-  - [小冬备考]
+  - [小冬找工作]
 ---
 
 # LeetCode 刷题记录
