@@ -16,7 +16,7 @@ tags:
 
 操作系统：ubuntu 18.04
 
-Apollo:v5.0.0
+Apollo: v6.0.0
 
 lgsvl: svlsimulator-linux64-2021.3
 
@@ -53,14 +53,14 @@ lgsvl: svlsimulator-linux64-2021.3
 <img src="/img/211115image/lgsvl0.png" >
 </p>
 
-4. 点击启动仿真即可在SVLSimulator中出现仿真画面。
+4. 点击启动仿真即可在SVLSimulator中出现仿真画面,首先会自动下载地图信息.
 5. 进入apollo dock容器下，执行下列命令：
 
 ```bash
 	bash scripts/bootstrap_lgsvl.sh
 	bash scripts/bridge.sh  //执行完毕后保持卡住，没有任何输出状态 完成与仿真器的连接
 ```
-6. 启动  http://localhost:8888/ DV界面，选择地图，车辆，切换到Module Controller上，打开定位localization模块
+6. 启动  http://localhost:8888/ DV界面，选择地图，车辆，切换到Module Controller上，打开定位localization模块,这里可以参考B站视频.
 
 <p align="center">
 <img src="/img/211115image/lgsvl1.png" >
@@ -84,15 +84,22 @@ lgsvl: svlsimulator-linux64-2021.3
   .
 ```
 
+# tips：
+
+<1> routing线出现之后遇到planning等模块报红、车辆不动没现象的时候要先点Reset All，再点Setup，甚至多次，等一会儿出规划线之后就能自己跑了.
+
+<2> 整个过程不用开Simcontrol，直接给routing点即可
+
+
 # QA环节
 
 Q:能够订阅apollo/control/数据 ，但是得想办法发出去，让这个仿真软件订阅到.
-
 - A:`Modole controller` 这个选项中启动control模块即可.
 
 
 Q:目前存在问题：/apollo/sensor/lidar128/compensator/PointCloud2话题接收不到数据. 
-
 - A:Lgsvl中6.0的林肯模型还没有加入Lidar等传感器，只能从话题拿到`/apollo/perception/obstacles` 数据直接来用.
 
 
+Q:LGSVL里面林肯车型怎么选择？？
+- A:(1) Apollo5.0(full analysis)这辆车有Radar跟Lidar传感器，使用的时候效果跟B站视频是一样的，适合感知预测的同学。(2) Apollo6.0(modular testing)这辆车使用的3D Ground Truth，省去了感知并带有预测，适合直接搞决策规划控制的同学。
