@@ -42,7 +42,7 @@ tags:
 - [WuJie1010/Facial-Expression-Recognition.Pytorch](https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch)
 
 - 说起卷积之后图像的变化情况，这里我用一个简单的程序实现了一下，类名称其实不应该写成resnet😂，stride分别为1和2时效果图如下~
-- [My image conv sourse code](https://github.com/Tcloser/resnet_conv_show) 详细内容可参考代码注释和README
+- [My image conv sourse code](https://github.com/LordonCN/resnet_conv_show) 详细内容可参考代码注释和README
 
 
   <img src="/img/190728image/stride=1.jpg">

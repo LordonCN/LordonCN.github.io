@@ -3,10 +3,7 @@
 <br>
 At the same time, I find that write article in English is necessary.Because not only can I easily write(dont need to change input methord) ,but also can practice my English XD.Nowadays I realise that It's a hard work to practice Blind typing is difficult, from now on, do it!   
 
-
-
-
 <br>
 PS:
 首页视频修改路径
-Tcloser.github.io/_includes/friends.html
+LordonCN.github.io/_includes/friends.html
